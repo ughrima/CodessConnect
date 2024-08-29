@@ -1,6 +1,5 @@
 import React from "react";
 import sessions from "../data/sessioninfo";
-import "../App.css";
 
 function SessionItem({ session }) {
   return (
