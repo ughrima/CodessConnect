@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Homepage from "./pages/Home";
 import MentorSessionTracking from "./pages/MentorSessionTracking";
 import SessionsPage from './pages/Sessions';
 
@@ -10,7 +10,7 @@ function App() {
 
       <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Homepage />} />
       <Route path="/MentorSessionTracking" element={<MentorSessionTracking />} />
       <Route path="/SessionsPage" element={<SessionsPage />} />
       </Routes>
