@@ -6,6 +6,7 @@ const Calendar = () => {
   const [showEventForm, setShowEventForm] = useState(false);
   const [events, setEvents] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
+  
 
   useEffect(() => {
     initializeCalendar();
@@ -72,20 +73,30 @@ const Calendar = () => {
     const date = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
     setSelectedDate(date);
     setShowEventForm(true); // Show event form when a day is selected
+    
+   
+
   };
 
   const toggleEventForm = () => {
     setShowEventForm(!showEventForm);
+    
+    
   };
 
   const addEvent = () => {
     const eventName = document.querySelector('.event-name').value;
+    const mentorName = document.querySelector('.mentor-name').value;
     const eventTimeFrom = document.querySelector('.event-time-from').value;
     const eventTimeTo = document.querySelector('.event-time-to').value;
 
-    if (eventName && eventTimeFrom && eventTimeTo && selectedDate) {
+    if (eventName && mentorName && eventTimeFrom && eventTimeTo && selectedDate) {
       setEvents([...events, { name: eventName, timeFrom: eventTimeFrom, timeTo: eventTimeTo, date: selectedDate }]);
       setShowEventForm(false); // Hide event form after adding the event
+      const selectedDayElement = document.querySelector('.selected-day');
+      if (selectedDayElement) {
+        selectedDayElement.classList.remove('selected-day');
+      }
       
     }
   };
@@ -160,7 +171,10 @@ const Calendar = () => {
             </div>
             <div className="add-event-body">
               <div className="add-event-input">
-                <input type="text" placeholder="Event Name" className="event-name" />
+                <input type="text" placeholder="Event Name " className="event-name" />
+              </div>
+              <div className="add-event-input">
+                <input type="text" placeholder="Mentor Name" className="mentor-name" />
               </div>
               <div className="add-event-input">
                 <input type="text" placeholder="Event Time From" className="event-time-from" />
@@ -175,7 +189,7 @@ const Calendar = () => {
           </div>
         )}
         <button className="add-event" onClick={toggleEventForm}>
-          <i className="fas fa-plus"></i>
+          <i className="fas fa-plus"><span style={{ color: '#b3b3b3', transform: 'scale(10)' }}></span> &#43; </i>
         </button>
       </div>
     </div>

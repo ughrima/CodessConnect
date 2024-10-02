@@ -10,13 +10,13 @@ function Homepage() {
         
         <ul className="flex space-x-8 text-lg">
           <li><a href="#home" className="text-gray-600 hover:text-purple-600">Home</a></li>
-          <li><a href="#/Opportunities" className="text-gray-600 hover:text-purple-600">Opportunities</a></li>
-          <li><a href="/Sessions" className="text-gray-600 hover:text-purple-600">Session Archives</a></li>
+          <li><a href="/Opportunities" className="text-gray-600 hover:text-purple-600">Opportunities</a></li>
+          <li><a href="/SessionsPage" className="text-gray-600 hover:text-purple-600">Session Archives</a></li>
           <li><a href="/MentorSessionTracking" className="text-gray-600 hover:text-purple-600">Session Tracking</a></li>
         </ul>
         <div >
         <img src="/assets1/image.png" alt="Codess Cafe" className="h-20 w-20 rounded-full" />
-        
+        #ec4899 #a855f7
         </div>
       </nav>
 

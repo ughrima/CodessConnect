@@ -18,7 +18,7 @@ function SessionItem({ session }) {
 
 function SessionsPage() {
   return (
-    <div className="min-h-screen bg-[#a481d4] p-8 text-center">
+    <div className="min-h-screen bg-[#8860d7] p-8 text-center">
       <h1 className="text-7xl font-bold mb-6 text-[#ffffff]">Upcoming Workshops and Sessions</h1>
       <h3 className="text-xl font-light text-[#ffffff] mb-12 px-10 lg:px-40">
         Here at Codess, we provide valuable insights into upcoming opportunities designed to help you seize them. These sessions are led by 

@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient-colors: linear-gradient(45deg, #ec4899, #a855f7);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: var(--gradient-colors); /* Full-page background color */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.opportunities-container {
+    flex-grow: 1; /* Ensure it takes full available space */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: var(--gradient-colors); /* Ensuring container has background color */
+    min-height: 100vh; /* Ensure the container fills the full viewport height */
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headingfirst {
+    text-align: center;
+    color: white; /* White heading */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 45px; /* Increased font size */
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+   
+}
+
+.search-bar, .filter-dropdown {
+    padding: 10px;
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left:20px;
+    width:40%
+   
+}
+
+.filter-dropdown{
+    margin-right: 20px;
+}
+
+.add-opportunity-section {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.add-opportunity-btn {
+    padding: 10px 15px;
+    background-color: #6d2394; /* Replaced with a purple shade */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-opportunity-btn:hover {
+    background-color: #4d318a; /* Darker hover state */
+}
+
+.opportunity-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.opportunity-form input,
+.opportunity-form select,
+.opportunity-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #6d2394; /* Replaced with a purple shade */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4d318a; /* Darker hover state */
+}
+
+.opportunities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    flex-grow: 1; /* Ensure it grows to fill the available space */
+    min-height: 100px; /* Ensure it doesn't shrink completely */
+}
+
+.opportunity-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+   max-height:300px;
+}
+
+.opportunity-card h2 {
+    color: #5c3ba0; /* Replaced with a purple shade */
+}
+
+.opportunity-card p {
+    color: #555;
+}
+
+.apply-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6d2394; /* Replaced with a purple shade */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.apply-link:hover {
+    background-color: #4d318a; /* Darker hover state */
+}
